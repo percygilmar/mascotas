@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #dc8710;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    text-align: center;
+    padding: 1rem;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.form-container {
+    display: inline-block;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px); /* Ajustar el ancho del input para que sea más corto */
+    padding: 10px; /* Ajustar el padding para que sea más corto */
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* Tamaño de fuente aumentado */
+    background-color: transparent; /* Hacer el fondo transparente */
+    color: white; /* Color de texto blanco */
+    border-bottom: 1px solid white; /* Línea inferior blanca */
+    margin-bottom: 10px; /* Aumentar el margen inferior */
+    transition: border-bottom-color 0.3s; /* Transición para el color de la línea inferior */
+}
+
+input[type="text"]:focus {
+    border-bottom-color: #dc8710; /* Cambiar el color de la línea inferior al enfocar */
+}
+
+.arrow {
+    font-size: 3rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    color: white;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.requisitos {
+    padding: 20px;
+}
+
+.descargas {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #dc8710;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px; /* Añade margen a la derecha para separar los botones */
+}
+
+button:hover {
+    background-color: #c16e00;
+}
+
